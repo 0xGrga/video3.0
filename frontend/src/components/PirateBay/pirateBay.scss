@@ -1,0 +1,46 @@
+@import "./../../App.scss";
+
+.pirateBay{
+  &_top{
+    border: 0.5px solid $border;
+    background-color: $primary;
+    padding: 1vh;
+    font: 1.25em monospace;
+    margin: auto;
+    width: 90%;
+
+  }
+  &_files{
+    border: 0.5px solid $border;
+    background-color: $primary;
+    padding: 1vh;
+    font: 1.25em monospace;
+    margin: auto;
+    width: 90%;
+
+    ul{
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    li{
+      position: relative;
+      padding: 1px;
+      display: list-item;
+    }
+
+    &_size{
+      float: right;
+    }
+  }
+  &_desc{
+    border: 0.5px solid $border;
+    background-color: $primary;
+    padding: 1vh;
+    font: 1.25em monospace;
+    margin: auto;
+    width: 90%;
+    white-space: pre-wrap;
+  }
+}

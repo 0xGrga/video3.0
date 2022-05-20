@@ -1,0 +1,44 @@
+@import "../../App.scss";
+
+.sideVideo{
+  border-bottom: 0.3px solid $border;
+  height: 13vh;
+
+  &_left{
+    position: relative;
+    text-align: center;
+    padding-left: 0 !important;
+    height: 100%;
+    img{
+      height: 100%;
+    }
+  }
+  &_thumbnail{
+    cursor: pointer;
+    width: 100%;
+  }
+  &_duration{
+    position: absolute;
+    bottom: 0.6rem;
+    right: 1.2rem;
+    font-size: 0.9rem;
+    padding: 0.2rem;
+    background-color: rgba(08, 08, 08, 0.6);
+    border-radius: 5px;
+  }
+  &_title{
+    cursor: pointer;
+    font-size: 0.95rem;
+    @include line-clamp(2);
+  }
+  &_channel{
+    span{
+      font-size: 0.8rem;
+      display: block;
+    }
+    span1{
+      font-size: 0.8rem;
+      display: block;
+    }
+  }
+}

@@ -1,0 +1,35 @@
+@import "./../../App.scss";
+
+.channel{
+  border-bottom: 1px solid $border;
+
+  &_cover{
+    background-image: linear-gradient(to bottom, rgba(245, 246, 252, 0.52), $primary), var(--img);
+    position: relative;
+    width: 100%;
+    height: 300px;
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  &_details{
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    align-items: center;
+    img{
+      width: 80px;
+      height: 80px;
+      border-radius: 5px;
+    }
+    span{
+      margin-left: 3px;
+      font-size: 1.3rem;
+      display: block;
+    }
+  }
+}

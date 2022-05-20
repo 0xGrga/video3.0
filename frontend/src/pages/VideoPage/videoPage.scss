@@ -1,0 +1,14 @@
+.videoPage{
+  display: flex;
+
+  &_player{
+    height: 60vh;
+    width: 100%;
+    margin-bottom: 2rem;
+
+    video{
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

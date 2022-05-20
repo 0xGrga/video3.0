@@ -1,0 +1,42 @@
+$primary: #191819;
+$secondary: #202020;
+$border: #333;
+$text: #d1e3dd;
+
+::-webkit-scrollbar {
+   width: 0px;
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: monospace;
+}
+
+body {
+   background-color: $primary;
+   background-attachment: fixed;
+   color: $text;
+}
+
+.sidebar_children{
+  display: flex;
+}
+
+.children{
+  padding-top: 2vh;
+  position: relative;
+  top: 7vh;
+  background: $secondary;
+  min-height: 93vh;
+  height: 100%;
+}
+
+
+@mixin line-clamp($number) {
+   overflow: hidden;
+   display: -webkit-box;
+   -webkit-line-clamp: $number;
+   -webkit-box-orient: vertical;
+}

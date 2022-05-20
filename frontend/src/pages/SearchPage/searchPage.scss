@@ -1,0 +1,29 @@
+@import "./../../App.scss";
+
+.searchCategories {
+   padding: 0.5rem 0;
+
+   display: flex;
+
+
+   span {
+      margin-right: 1rem;
+      padding: 0.5rem;
+      width: 20vh;
+      text-align: center;
+
+      border: 1.5px solid $text;
+      border-radius: 5rem;
+      cursor: pointer;
+
+      &:hover {
+         background-color: #374a59;
+      }
+
+      &.active {
+         color: #fff;
+         background-color: #606060;
+         border-color: $border;
+      }
+   }
+}
